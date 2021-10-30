@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' href='../static/style3.css'>
+  <!-- FUENTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <title> CV 3 </title>
+</head>
+
+<body>
+  <section class="cv">
+    <!-- HEADER -->
+    <div class="header">
+      <h1 class="header-name">{{nombre}}</h1>
+      <h4 class="header-job">{{job}}</h4>
+      <div class="header-contact">
+        <a><i class="age"></i>{{age}}</a>
+        <a><i class="email"></i>{{email}}</a>
+        <a><i class="phone-number"></i>{{phone}}</a>
+        <a><i class="address"></i>{{address}}</a>
+      </div>
+      <hr class="dividir">
+    </div>
+    <div class="body-cv">
+      <!-- Left Side -->
+      <div class="left-cv">
+        <!-- Profile -->
+        <div class="c-cv">
+          <h3>Presentación</h3>
+          <div class="det profile">
+            <p>{{resumen}}</p>
+          </div>
+        </div>
+        <!-- Experiencia -->
+        <div class="c-cv">
+          <h3>Experiencia Laboral</h3>
+          <div class="det experience">
+            <p>{{exp_laboral}}</p>
+          </div>
+            <!-- Education -->
+            <div class="c-cv">
+              <h3>Educación</h3>
+              <div class="det education">
+                  <p>{{educacion}}</p>
+               </div>
+            </div>
+        </div>
+
+      </div>
+      <!-- Right side -->
+      <div class="right-cv">
+        <!-- Awards -->
+        <div class="c-cv">
+          <h3>Logros</h3>
+          <div class="det awards">
+            <h4>{{logros}}</h4>
+          </div>
+        </div>
+        <!-- Skills -->
+        <div class="c-cv">
+            <h3>Habilidades</h3>
+        </div>
+      
+        <div class="det skills">
+            <h4>{{habilidades}}</h4>
+        </div>
+      
+        <!-- References -->
+        <div class="c-cv">
+          <h3>References</h3>
+          <div class="det references">
+            <p>{{references}}</p>
+          </div>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="c-cv">
+          <h3>Intereses</h3>
+          <div class="det hobbies">
+            <p>{{intereses}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

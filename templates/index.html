@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CV FORM</title>
+  <link rel="stylesheet" type="text/css" href="../static/main.css">
+  <!-- GOOGLE FONTs -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body>
+  <div class="content">
+    <h1 class="titulo">FORMULARIO <span>CV</span></h1>
+  </div>
+  <div class="resumen">
+    <form action="/my_cv" method="post">
+      <h2> Resumen o Presentacion</h2>
+      <label for="resumen"> Resumen </label>
+      <p><input type="text" name="fresumen"></p>
+
+      <h2> Datos Personales</h2>
+        <p>
+          <label for="nombre"> Nombre Completo </label>
+          <input type="text" name="fnombre">
+        </p>
+
+        <p>
+          <label for="job"> Trabajo </label>
+          <input type="text" name="fjob">
+        </p>
+
+        <p>
+          <label for="edad"> Edad </label>
+          <input type="number" name="fedad">
+        </p>
+
+        <p>
+          <label for="email"> Email </label>
+          <input type="email" name="femail">
+        </p>
+
+        <p>
+          <label for="celular">Numero Celular</label>
+          <input type="number" name="fcelular">
+        </p>
+
+        <p>
+          <label for="nacionalidad">Nacionalidad</label>
+          <input type="text" name="fnacionalidad">
+        </p>
+   
+        <h2>Experiencia Laboral</h2>
+          <p>
+            <input type="text" name="fexp-laboral">
+          </p>
+ 
+        <h2>Estudios</h2>
+
+        <p>
+          <input type="text" name="feducacion">
+        </p>
+
+        <h2>Logros</h2>
+
+          <p>
+            <input type="text" name="flogros">
+          </p>
+   
+
+        <h2>Habilidades</h2>
+     
+          <p>
+            <input type="text" name="fhabilidades">
+          </p>
+
+
+        <h2>Intereses</h2>
+      
+          <p>
+            <input type="text" name="fintereses">
+          </p>
+    
+ 
+        <h2>Referencias</h2>
+
+          <p>
+            <input type="text" name="freferencias">
+          </p>
+          <input type="submit" value="Submit">
+      </form>
+    </div>
+</body>
+
+</html>

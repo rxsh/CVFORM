@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>RESUME CV</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <link rel='stylesheet' type='text/css' href='../static/style2.css'>
+</head>
+
+<body>
+  <div class="cv_wrapper">
+    <div class="cv_left">
+      <div class="cv_bottom">
+        <div class="cv_item cv_role">
+          <div class="nombre">{{ nam }}</div>
+          <div class="role">{{ job }}</div>
+        </div>
+        <div class="cv_item cv_perfil">
+          <div class="cv_title">Profile</div>
+          <div class="cv_info">{{ resumen }}</div>
+        </div>
+        <div class="cv_item cv_addres">
+          <div class="cv_title">Address</div>
+          <div class="cv_info">
+          {{ address }}
+          </div>
+        </div>
+        <div class="cv_item cv_contact">
+          <div class="cv_title">Contact</div>
+          <div class="cv_info">
+            <div class="cv_subtitle">Phone</div>
+            <div class="cv_subinfo">{{ phone }}</div>
+          </div>
+          <div class="cv_info">
+            <div class="cv_subtitle">Email</div>
+            <div class="cv_subinfo">{{ email }}</div>
+          </div>
+        </div>
+        <div class="cv_item cv_skills">
+          <div class="cv_title">Skills</div>
+          <div class="cv_info">
+            <div class="skill_list">
+              <div class="skill_left">{{ habilidades }}</div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cv_right">
+      <div class="cv_item cv_role">
+        <div class="nombre">{{ nam }}</div>
+        <div class="role">{{ job }}</div>
+      </div>
+      <div class="cv_item cv_educacion">
+        <div class="cv_title">Education</div>
+        <div class="cv_info">
+          <div class="cv_data">
+            <div class="content">
+              <p>Title</p>
+              <p>{{ educacion }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cv_item cv_experiencia">
+        <div class="cv_title">Experience</div>
+        <div class="cv_info">
+          <div class="cv_data">
+            <div class="content">
+              <p>Title</p>
+              <p>{{ exp_laboral }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cv_item cv_interes">
+        <div class="cv_title">Interest</div>
+        <div class="cv_info">
+          <div class="interes">
+            <div class="data">
+              {{ intereses }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
